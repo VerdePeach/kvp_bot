@@ -1,0 +1,57 @@
+.saveTopicForm {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 100px;
+    h2 {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    p {
+        margin-bottom: 20px;
+        color: #ff0000;
+        font-weight: bold;
+        text-align: center;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        input,
+        textarea {
+            border: 2px solid #fdca22;
+            background-color: #f3f3f3ab;
+            border-radius: 10px;
+            outline: none;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-size: 18px;
+            &:hover,
+            &:focus {
+                border: 2px solid #d3ff59d3;
+            }
+        }
+        .btnBlock {
+            display: flex;
+            justify-content: center;
+            button {
+                border: 1px solid #fdca22;
+                border-radius: 10px;
+                background-color: #d3ff59d3;
+                font-size: 18px;
+                padding: 10px;
+                cursor: pointer;
+                &:hover {
+                    background-color: #bfeb46d3;
+                }
+                &:active {
+                    background-color: #97b939d3;
+                }
+            }
+        }
+        .success {
+            margin-top: 10px;
+            color: #0ca12c;
+            font-weight: bold;
+            text-align: center;
+        }
+    }
+}

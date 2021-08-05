@@ -1,0 +1,51 @@
+.topicList {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+    .createBtn {
+        margin: 0px 100px;
+        display: flex;
+        a {
+            text-decoration: none;
+            padding: 10px;
+            background-color: #dd7c2f;
+            color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0px 7px 23px 5px #00000038;
+            &:hover {
+                background-color: #d8792b;
+            }
+            &:active {
+                background-color: #bd641c;
+            }
+        }
+    }
+    table {
+        margin: 30px 150px;
+        border: 0px solid;
+        th {
+            margin: 10px 0px;
+            padding: 10px;
+            background-color: #bdbdbd;
+        }
+        tr {
+            background-color: #e5eb92a2;
+        }
+        td {
+            padding: 10px 0px;
+        }
+        .topicNameData {
+            padding-left: 20px;
+        }
+
+        .topicControl {
+           display: flex;
+           justify-content: space-evenly;
+           align-items: center;
+            div {
+                display: block;
+                cursor: pointer;
+            }
+        }
+    }
+}

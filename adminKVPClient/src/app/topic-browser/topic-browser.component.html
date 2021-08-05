@@ -1,0 +1,18 @@
+<div class="topicList">
+    <div class="createBtn">
+        <a routerLink="/generate" routerLinkActive="active">Створити тему</a>
+    </div>
+    <table>
+        <tr>
+            <th>Назва Теми</th>
+            <th>Управління</th>
+        </tr>
+        <tr *ngFor="let topic of topics">
+            <td class="topicNameData">{{ topic.name }}</td>
+            <td class="topicControl">
+                <div (click)="editTopic(topic.id)"><fa-icon [icon]="faPen"></fa-icon></div>
+                <div (click)="deleteTopic(topic.id)"><fa-icon [icon]="faTrash"></fa-icon></div>
+            </td>
+        </tr>
+    </table>
+</div>

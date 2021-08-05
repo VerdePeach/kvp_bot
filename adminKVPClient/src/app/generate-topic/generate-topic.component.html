@@ -1,0 +1,16 @@
+<div class="saveTopicForm">
+    <h2>Заповніть форму та збережіть тему</h2>
+    <p *ngIf="showInputError">Помилка заповнення!</p>
+    <form>
+        <input type="text" name="topicName" [(ngModel)]="topicName" placeholder="Назва теми">
+        <textarea name="topicText" rows="10" cols="100" [(ngModel)]="topicText" placeholder="Контент теми"></textarea>
+        <input list="topicts" name="fatherTopicId" [(ngModel)]="fatherTopicId" placeholder="Базова тема">
+        <datalist id=topicts name=topicts>
+            <option *ngFor="let topic of topics" [value]="topic.id">{{ topic.name }}</option>
+        </datalist>
+        <div class="btnBlock">
+            <button type="button" name="saveTopic" (click)="saveTopic()">Зберегти</button>
+        </div>
+        <p class="success" *ngIf="saveSuccess">Збережено!</p>
+    </form>
+</div>
